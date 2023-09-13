@@ -21,5 +21,10 @@ Imports:
     stringr 
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    ggplot2,
+    DT,
+    gt,
+    htmlTable,
+    kableExtra
 VignetteBuilder: knitr
