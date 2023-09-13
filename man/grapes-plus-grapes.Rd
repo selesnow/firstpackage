@@ -2,21 +2,33 @@
 % Please edit documentation in R/str_plus.R
 \name{\%+\%}
 \alias{\%+\%}
-\title{Concatinate}
+\title{Concatenate Strings}
 \usage{
 x \%+\% y
 }
 \arguments{
-\item{x}{first string}
+\item{x}{Character, first string}
 
-\item{y}{second string}
+\item{y}{Character, second string}
 }
 \value{
-concatinate string
+A character vector
 }
 \description{
-Concatinate
+Operator for concatenate two strings.
 }
+\details{
+Use \verb{\%+\%} operator for join two or more strings
+}
+\section{Main}{
+
+The main ......
+}
+
 \examples{
+# two values
 "first" \%+\% "second"
+
+# three values
+"first" \%+\% "second" \%+\% "three"
 }

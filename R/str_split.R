@@ -3,7 +3,7 @@
 #' @param x string
 #' @param y pattern
 #'
-#' @return
+#' @returns character vector
 #' @export
 "%/%" <- function(x, y) {
 

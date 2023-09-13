@@ -1,0 +1,91 @@
+---
+title: "Заголовок виньетки"
+author: "Алексей Селезнёв"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Заголовок виньетки}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Заголовок 1го уровня
+## Заголовок 2го уровня
+
+* *курсив*
+* **жирный шрифт**
+* `2 + 2 = ` `r 2+2`
+    * подпункт
+* [сайт курса](https://selesnow.github.io/r_package_course) ^[сноска]
+
+## Нумерованный список
+
+1. Пункт 1
+2. Пункт 2
+    1. Пункт 2.1.
+    2. Пункт 2.2.
+3. Пункт 3
+    1. Пункт 3.1.
+    
+## Графики
+```{r fig.width = 6, fig.height = 6}
+library(ggplot2)
+
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point()
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point()
+```
+    
+## Таблицы и блоки кода
+
+### kable()
+```{r eval=FALSE}
+knitr::kable(mtcars)
+```
+
+### htmlTables
+```{r echo=FALSE}
+htmlTable::htmlTable(mtcars)
+```
+
+### kableExtra
+```{r}
+library(kableExtra)
+
+kbl(mtcars) %>% 
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+### DT
+```{r}
+DT::datatable(mtcars)
+```
+
+### gt
+```{r}
+library(gt)
+
+gt(mtcars, rownames_to_stub = T) %>% 
+  tab_header(
+      title = "Демонстрация таблицы",
+      subtitle = "построенной с помозью пакета gt"
+    ) %>% 
+  tab_source_note(
+    source_note = "Встроенный набор данных mtcars"
+  )
+
+```
+

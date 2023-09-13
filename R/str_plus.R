@@ -1,14 +1,22 @@
-#' Concatinate
+#' Concatenate Strings
 #'
-#' @param x first string
-#' @param y second string
+#' Operator for concatenate two strings.
 #'
-#' @return concatinate string
+#' Use `%+%` operator for join two or more strings
+#' @section Main:
+#' The main ......
+#' @param x Character, first string
+#' @param y Character, second string
+#'
+#' @returns A character vector with lenght 1
 #' @export
-#' @importFrom stringr str_c
 #'
 #' @examples
+#' # two values
 #' "first" %+% "second"
+#'
+#' # three values
+#' "first" %+% "second" %+% "three"
 "%+%" <- function(x, y) {
   stringr::str_c(x, y, sep = " ")
 }
