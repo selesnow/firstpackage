@@ -18,7 +18,8 @@ Depends:
 LazyData: true
 Imports: 
     cli,
-    stringr 
+    httr2,
+    stringr
 Suggests: 
     knitr,
     rmarkdown,
@@ -26,5 +27,6 @@ Suggests:
     DT,
     gt,
     htmlTable,
-    kableExtra
+    kableExtra,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr

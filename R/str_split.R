@@ -5,6 +5,10 @@
 #'
 #' @returns character vector
 #' @export
+#' @examples
+#' # example code
+#' test_str <- "OTDeASO180jazPcLGaMCGCsDQcg2-FABNRgDqPFONLY"
+#' httr2::secret_decrypt("OTDeASO180jazPcLGaMCGCsDQcg2-FABNRgDqPFONLY", 'FIRSTPACKAGE_KEY') %/% " "
 "%/%" <- function(x, y) {
 
   if (nchar(y) >= nchar(x)) stop("Pattern for spliting longer than string")

@@ -12,7 +12,7 @@ x \%+\% y
 \item{y}{Character, second string}
 }
 \value{
-A character vector
+A character vector with lenght 1
 }
 \description{
 Operator for concatenate two strings.
