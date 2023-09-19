@@ -4,7 +4,11 @@
 # firstpackage
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/selesnow/firstpackage/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/selesnow/firstpackage/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
+
+# firstpackage <a href="https://selesnow.github.io/firstpackage/"><img src="man/figures/logo.png" align="right" height="139" /></a>
 
 The goal of firstpackage is to …
 
